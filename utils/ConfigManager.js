@@ -11,25 +11,25 @@ var checkConfig = function () {
     }
     a = "";
     try { // it was gay
-        if (typeof config.mysql2.host === "undefined")
+        if (config.mysql2.host === undefined)
             a += "mysql.host is not set";
-        if (typeof config.mysql2.user === undefined)
+        if (config.mysql2.user === undefined)
             a += "mysql.user is not set";
-        if (typeof config.mysql2.password === undefined)
+        if (config.mysql2.password === undefined)
             a += "mysql.password is not set";
-        if (typeof config.mysql2.database === undefined)
+        if (config.mysql2.database === undefined)
             a += "mysql.database is not set";
-        if (typeof config.mysql2.waitForConnections === undefined)
+        if (config.mysql2.waitForConnections === undefined)
             a += "mysql.waitForConnections is not set";
-        if (typeof config.mysql2.connectionLimit === undefined)
+        if (config.mysql2.connectionLimit === undefined)
             a += "mysql.connectionLimit is not set";
-        if (typeof config.mysql2.queueLimit === undefined)
+        if (config.mysql2.queueLimit === undefined)
             a += "mysql.queueLimit is not set";
-        if (typeof config.express.enableUrlLog === undefined)
+        if (config.express.enableUrlLog === undefined)
             a += "express.enableUrlLog is not set";
-        if (typeof config.express.port === undefined)
+        if (config.express.port === undefined)
             a += "express.port is not set.";
-        if (typeof config.mirror.type === undefined) {
+        if (config.mirror.type === undefined) {
             a += "mirror.type is not set.";
         } else {
             if (config.mirror.type === "bloodcat") {

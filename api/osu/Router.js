@@ -8,6 +8,7 @@ router.all('/f', (req, res) => {
     return;
 });
 
+router.use('/osu/', require('./../osu/getBeatmap'));
 
 module.exports = router;
 
