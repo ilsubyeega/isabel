@@ -41,6 +41,8 @@ app.all('/', (req, res) => {
     return;
 })
 app.use('/api/', require('../api/osu/Router'));
+app.use('/web/', require('../mirror/Router'));
+app.use('/d/', require('../mirror/DownloadRouter'));
 app.all('*', (req, res) => {
     res.status(404);
     res.send({
